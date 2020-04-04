@@ -68,8 +68,4 @@ public class ManipulationActivity extends AppCompatActivity {
         }).attachToRecyclerView(recyclerView);
     }
 
-    public static Intent createIntent(Context context) {
-        return new Intent(context, ManipulationActivity.class);
-    }
-
 }

@@ -19,6 +19,14 @@ public class RecyclerViewActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private SimpleStringAdapter simpleStringAdapter;
 
+    /*변경 알림 메소드
+    * adapter.notifyDataSetChanged
+    * adapter.notifyItemChanged
+    * adapter.notifyItemInserted
+    * adapter.notifyItemMoved
+    * adapter.notifyItemRangeChanged
+    * 참고사이트: https://jabba.tistory.com/352*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +50,4 @@ public class RecyclerViewActivity extends AppCompatActivity {
         recyclerView.setAdapter(simpleStringAdapter);
     }
 
-    public static Intent createIntent(Context context) {
-        return new Intent(context, RecyclerViewActivity.class);
-    }
 }
